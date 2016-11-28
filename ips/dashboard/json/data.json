@@ -1,0 +1,36 @@
+{
+	"offerDetails" : [
+			{
+				  "id" : "offer001",	
+				  "name" :  "First Offer",
+				  "mfgBy" : "Mfg1",
+				  "quantity" : "10",
+				  "packaging" : "boxes",
+				  "storage" : "cold",
+				  "categories" : "bakery, juices",
+				  "bestByDate" : "sept 2017",
+				  "offerDetails_headline" : "HEADLINE1 -  First Offer by Mfg1 available at", 
+				  "offerDetails_description" : "clear, colourless, viscous, syrup"
+			},
+			{
+				  "id" : "offer002",	
+				  "name" :  "Second Offer",
+				  "mfgBy" : "Mfg2",
+				  "quantity" : "20",
+				  "packaging" : "crates",
+				  "storage" : "frozen",
+				  "categories" : "confectionery",
+				  "bestByDate" : "Dec 2016",
+				  "offerDetails_headline" : "HEADLINE2 -  First Offer by Mfg1 available at", 
+				  "offerDetails_description" : "confectionary desc"
+			}
+	],
+	"messages" : [
+		{
+			"msgid" : 1,
+			"msgTitle" : "Welcome to iPlansys",
+			"date" : "19 Nov 2016",
+			"msgText" : "Welcome onboard the iPlansys platform !! We look forward to a long and mutually beneficial relationship !"
+		}
+	]
+}

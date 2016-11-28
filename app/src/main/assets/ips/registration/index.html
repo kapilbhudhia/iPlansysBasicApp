@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	    <title></title>
+	    <meta name="description" content="" />
+	    <meta name="author" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/index.css">
+		
+	</head>
+	
+	<body>
+	<div class="container">
+		<div class="row">
+			<div id="header">
+			</div>
+		</div>
+		<div class="row">
+			<div id="content">
+			</div>
+		</div>
+		<div class="row">
+			<div id="footer">
+			</div>
+		</div>		
+	</div>
+		<script type="text/html" id="auth">
+		<!-- Enter mobile no section -->
+		<div id="mob" style="display:block" class="main-container">
+            <header class="header">
+                <img class="header-image" src="../img/iplansys_logo.png"/>
+                <div class="header-text">The easiest way to buy or sell, ready or excess inventory of food ingredients</div>
+            </header>
+            <section>
+                <div class="title-text">Whats your Mobile Number?
+                    <div class="description-text">Start getting deals and offers on your fingertips.</div>
+                </div>
+                
+                <div>
+                    <div class="mobile-container">
+						<img class="mob-image" src="../img/mobile_2x.png"/>
+                        <img class="mobile-prefix-image" src="../img/+91_2x.png"/>
+                        <input class="mobile-field" type="number" id="mobileNumber" placeholder="Enter Your Number"/>
+                    </div>
+                    <div><input type="button" class="submit-button" id="submitMobileNumber" disabled value="Submit"></div>
+                </div>
+            </section>
+        </div>
+		<!-- Enter OTP section -->
+        <div id="otp" style="display:none" class="main-container">
+            <header class="header">
+                <img class="header-image" src="../img/iplansys_logo.png"/>
+                <div class="header-text">The easiest way to buy or sell, ready or excess inventory of food ingredients</div>
+            </header>
+            <section>
+                <div class="call-dialog" id="call-dialog" style="display:none">
+                    <div class="icon"></div>
+                    <div class="dialog-text">Having trouble ?</div>
+                    <div><input type="button" class="call-button" id="callUsButton" value="Call Us Now"></div>
+                </div>
+                 <div class="call-dialog" id="otperror" style="display:none">
+                    <div class="icon"></div>
+                    <div class="dialog-text">The OTP you entered could not be autenticated. Please try again.</div>
+                </div>
+                <div class="title-text">OK, Enter OTP Number!
+                    <div class="otp-description-text">We sent you a 4 digit OTP number on your mobile <span id="displayedMobileNo"></span>.</div>
+                    <div class="otp-description-text">It may take few seconds to receive it.</div>
+                </div>
+                
+                <div>
+                    <div class="mobile-container">
+                    <img class="otp-image"/>
+                        <input id="otpInput" type="number" class="otp-field"/>
+                    </div>
+                    <div><input type="button" class="submit-button" id="submitOTP" disabled value="Verify OTP"></div>
+                    <div class="resend-otp"><a href="#" id="resendOTP">Resend OTP</a></div>
+                </div>
+            </section>
+        </div>
+
+		</script>
+		<script type="text/html" id="confirmprofile">
+			<div class="details-container">
+				<header class="details-header">
+					<div class="details-header-title">Confirm Your Details</div>
+					<div class="details-header-msg">Your Company Code is <span>ABC</span></div>
+					 <div class="call-dialog" id="call-dialog" style="display:none">
+						<div class="icon"></div>
+						<div class="dialog-text">Please call us so that we can check and correct you details with us.</div>
+						<div><input type="button" class="call-button" id="callUsButton" value="Call Us Now"></div>
+					</div>
+				</header>
+				<section>
+			   
+						<div class="detail-description">
+							<div id="company-address" class="label">Company Name</div>
+							<div class="details-text"><%= name %></div>
+							<div id="registered-address" class="label">Registered Address</div>
+							<div class="details-text"><%= companyAddress %></div>
+							<div id="contact-primary" class="label">Primary Contact Person</div>
+							<div class="details-text">
+								<div>Pankaj Jadhav, <span>Sales Manager</span></div>
+								<div><span>Phone Number:</span> 777-66666666</div>
+								<div><span>Mobile Number:</span> 444-66666666</div>
+								<div><span>Email id:</span> pankaj.jadhav@gmail.com</div>
+								<div><span>Skype id:</span> pankaj.jadhav</div>
+							</div>
+							<div id="contact-additional" class="label">Additional Contact Person</div>
+							<div class="details-text">
+								<div>Sanjay Puri, <span>design Head</span></div>
+								<div>Nikhil Katre, <span>Development Manager</span></div>
+							</div>
+							<div id="registration-details" class="label">Registration Details</div>
+							<div class="details-text">
+								<div><span>Pan No:</span> 777-66666666</div>
+								<div><span>VAT(TIN) No:</span> 444-66666666</div>
+								<div><span>CST Regn No:</span> pankaj.jadhav@gmail.com</div>
+								<div><span>Service Tax No:</span> pankaj.jadhav</div>
+								<div><span>ECC No:</span> pankaj.jadhav</div>
+							</div>
+						</div>
+						<div class="footer">
+							<input type="button" class="incorrect-button" id="profileIncorrect" value="Incorrect">
+							<input type="button" class="correct-button" id="profileCorrect" value="Correct">
+						</div>
+				</section>
+			</div>
+		</script>
+		<!-- templates end -->
+		
+		<!-- scripts begin -->
+		<!-- libraries -->
+		<script type="text/javascript" src="../lib/underscore.js"></script>	    
+		<script type="text/javascript" src="../lib/jquery-3.1.0.js"></script>
+		<script type="text/javascript" src="../lib/backbone.js"></script>
+		<!-- application code -->
+		<script type="text/javascript" src="../js/baseviews.js"></script>
+		<script type="text/javascript" src="models.js"></script>
+		<script type="text/javascript" src="services.js"></script>
+		<script type="text/javascript" src="controllers.js"></script>
+		<script type="text/javascript" src="views.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<!-- scripts end -->
+
+
+		</body>
+</html>

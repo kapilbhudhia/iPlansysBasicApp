@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+	    <title></title>
+	    <meta name="description" content="" />
+	    <meta name="author" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="../css/index.css">
+		
+	</head>
+	
+	<body>
+	<div class="container">
+		<div class="row">
+			<div id="header">
+			</div>
+		</div>
+		<div class="row">
+			<div id="content">
+				<div class="loader"></div>
+			</div>
+		</div>
+		<div class="row">
+			<div id="footer">
+			</div>
+		</div>		
+	</div>
+		<script type="text/html" id="messages">
+            <header class="product-details-header">
+                <div class="details-header-title deals-header-title"><a href="#" onclick="goBack()"class="back-btn"><img class="back-btn-image" src="../img/Back_homeArrow_2x.png"/></a> iPlansys News</div>
+    
+            </header>
+            <section class="news-details-container new-desc">
+                <ul class="news-list">
+					<% _.each(messagesList, function(message) { %>
+                    <li class="news-item">
+                        <div class="news-heading">
+                            <div class="product-heading news-title"> <%= message.msgTitle %></div>
+                            <div class="news-sub-title"> <%= message.date %></div>
+                        </div>
+                        <div class="news-description">
+                            <%= message.msgText %>
+                        </div>
+                    </li>
+					<% }) %>
+                </ul>
+            </section>
+		
+		</script>
+		<script type="text/html" id="dashboard">
+        <div class="details-container">
+            <header id="header_messages_icon" class="details-header">
+                <div class="details-header-title deals-header-image">Deals and Offers</div>
+            </header>
+            <section>
+               <ul class="offer-list" id="offerList">
+					<% _.each(offerList, function(offer) { %>
+                    <li class="product-list-item" data-prod-id="<%= offer.id %>">
+                    <div class="product-list-details">
+                        <div class="product-heading"><%= offer.name %></div>
+                        <div><span class="list-label">by</span> <%= offer.mfgBy %></div>
+							<div class="list-details">
+								<div><span class="list-label">Quantity</span> <%= offer.quantity %></div>
+								<div><span class="list-label">Storage</span> <%= offer.storage %> </div>
+						 
+								<div><span class="list-label">Package</span> <%= offer.packaging %> </div>
+								<div><span class="list-label">Category</span> <%= offer.categories %> </div>
+							</div>
+						</div>
+                        <div class="best-before"><span>Best Before: </span><span><%= offer.bestByDate %></span></div>
+                    </a></li>
+					<% }) %>
+					</ul>
+            </section>
+        </div>
+		</script>
+		<script type="text/html" id="proddetails">
+        <div class="details-container">
+            <header class="product-details-header">
+                <div class="details-header-title deals-header-image" id="header_messages_icon"><a href="#" class="back-btn"><img class="back-btn-image" src="../img/Back_arrow_white_2x.png"/></a> Offer Details</div>
+                <div class="product-item-details">
+                    <div class="list-header">
+                        <div class="product-heading">High Maltose Corn Syrup</div>
+                        <div><span class="list-label">by</span> <span style="font: 'Segoe UI';">Angel Starch & Food Pvt Ltd </span></div>
+                        <div class="best-before"><span>Best Before: </span><span>30 November 2016</span></div>
+                    </div>
+                </div>
+            </header>
+            <section class="product-desc">
+                    <div style="color: #999; font: 12pt 'Segoe UI';">
+                        One ton of good quality High Maltose Corn syrup manufactured by Angel Starch & Food Pvt Ltd is available at a very reasonable price. Certificate of authentication and samples will be shared with interested parties. Sampling cost to be born by buyer.
+                    </div>
+                    <div class="product-detail-description">Details
+                        <div><span class="product-label">Quantity:</span> 1000 KG</div>
+                            <div><span class="product-label">Packaging:</span> Cold</div>           
+                            <div><span class="product-label">Storage Condition:</span> plastic</div>
+                            <div><span class="product-label">Product Usage:</span> Bakery Products, dairy</div>
+                            <div><span class="product-label">Mfg Place:</span> Pune</div>
+                            <div><span class="product-label">Mfg Date:</span> 10/10/2016</div>
+                           
+                    </div>
+                    <div class="product-detail-description">Specifications
+                        <div><span class="product-label">Flavor:</span> 1kg</div>
+                            <div><span class="product-label">Product Type:</span> Cold</div>           
+                            <div><span class="product-label">Colour:</span> plastic</div>
+                            <div><span class="product-label">Type:</span> Bakery Products, dairy</div>
+                            <div><span class="product-label">Taste:</span> Tasteless</div>
+                            <div><span class="product-label">Odor:</span> None</div>
+                    </div>
+                    
+                    <div><input type="button" class="submit-button interested-btn" value="I' am Interested, Call Now"></div>
+            </section>
+        </div>
+		</script>
+		<!-- templates end -->
+		
+		<!-- scripts begin -->
+		<!-- libraries -->
+		<script type="text/javascript" src="../lib/underscore.js"></script>	    
+		<script type="text/javascript" src="../lib/jquery-3.1.0.js"></script>
+		<script type="text/javascript" src="../lib/backbone.js"></script>
+		<!-- application code -->
+		<script type="text/javascript" src="../js/baseviews.js"></script>
+		<script type="text/javascript" src="models.js"></script>
+		<script type="text/javascript" src="services.js"></script>
+		<script type="text/javascript" src="views.js"></script>
+		<script type="text/javascript" src="app.js"></script>
+		<!-- scripts end -->
+
+
+		</body>
+</html>

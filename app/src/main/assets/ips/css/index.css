@@ -1,0 +1,428 @@
+.main-container {
+    background:url("../img/BG_Image_750.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position:fixed;
+    top:0;
+    left:0;
+}
+
+.header {   
+    background-color: #fff;
+    height: 100pt;
+    width: 100%;
+    font: normal 13pt "Segoe UI";
+    color: #333333;
+
+}
+.header-image {
+    width: auto;
+    height: 60pt;
+    position: relative;
+    top: 10pt;
+    display: block;
+    margin: 0 auto;
+}
+.header-text {
+    width: 90%;
+    position: absolute;
+    left: 5%;
+    text-align: center;
+}
+.title-text {
+    font: bold 18pt "Segoe UI";
+    color: #fff;
+    text-align: center;
+    margin-top: 60pt;
+    margin-bottom: 40pt;
+}
+.description-text {
+    font: normal 13pt "Segoe UI";
+    color: #999;
+    width: 180pt;
+    margin: 0 auto;
+}
+.mobile-field{  
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    top: 7pt;
+    left: 64pt;
+    font: normal 18pt "Segoe UI";
+    color: #999;
+    padding: 0;
+}
+.mobile-prefix-image {
+    height: 38pt;
+    position: absolute;
+    left: 21pt;
+    top: 1pt;
+    color: #999;
+    background-color: transparent;
+}
+.mob-image {   
+    height: 18pt;
+    position: absolute;
+    top: 11pt;
+    left: 10pt;
+}
+.mobile-container {
+    background-color: rgba(0,0,0,0.5);
+    border: rgba(0,0,0,0.5) 1px solid;
+    height: 40pt;
+    width:80%;
+    position: relative;
+    margin-left: 10%;
+}
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+input:focus { 
+    border:none;
+    outline: none;
+}
+.submit-button {
+    background:#37b0d7;
+    font: normal 18pt "Segoe UI";
+    color: #fff;
+    text-transform: uppercase;
+    height: 40pt;
+    border-color: transparent;
+    border-radius: 40px;
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 20pt;
+}
+.call-button {
+    background:#37b0d7;
+    font: normal 15pt "Segoe UI";
+    color: #fff;
+    text-transform: uppercase;
+    border-color: transparent;
+    border-radius: 40px;
+}
+.otp-description-text {
+    font: normal 13pt "Segoe UI";
+    color: #999;
+    width: 225pt;
+    margin: 0 auto;
+}
+.otp-description-text span {
+    font: normal 15pt "Segoe UI";
+    color: #fff;
+}
+.otp-field {
+    background-color: transparent;
+    border:none;
+    position: absolute;
+    top: 7pt;
+    left: 50pt;
+    font: normal 18pt "Segoe UI";
+    color: #999;
+    letter-spacing: 30pt;
+}
+.otp-image {
+    content: url(../img/opt_2x.png);
+    height: 18pt;
+    position: absolute;
+    top: 11pt;
+    left: 10pt;
+}
+.resend-otp a{
+    text-decoration: none;
+    font: normal 18pt "Segoe UI";
+    text-transform: uppercase;
+    color: #fff;
+}
+.resend-otp {
+   margin-top: 10pt;
+   text-align: center;
+}
+.details-header, .product-details-header .details-header-title {
+    position:fixed;
+    top:0;
+    left:0;
+	width: 100%;
+    text-align: center;
+}
+.details-header-title {
+    height: 40pt;
+    font: bold 18pt "Segoe UI";
+    color: #fff;
+    background:#37b0d7;
+    line-height: 40pt;
+}
+.details-header-msg{
+    height: 40px;
+    font: normal 18pt "Segoe UI";
+    color: #fff;
+    background: #8CB530;
+}
+.details-header-msg span{
+    font: bold 18pt "Segoe UI";
+    color: #fff;
+}
+.details-container {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    top:0;
+    left:0;
+}
+.details-container .label {
+    font: bold 14pt "Segoe UI";
+    color: #37b0d7;
+    margin-top: 30px;
+}
+#company-address.label {
+    margin-top: 0;
+}
+.details-text {
+    font: bold 14pt "Segoe UI";
+    color: #333;
+}
+.details-text span {
+    font: normal 14pt "Segoe UI";
+    color: #999;
+}
+.correct-button, .incorrect-button {
+    width: 50%;
+    height: 40px;
+    border-color: transparent;
+}
+.correct-button {
+    background:#37b0d7;
+    font: normal 18pt "Segoe UI";
+    color: #fff;
+    text-transform: uppercase;
+}
+.incorrect-button {
+    display: block;
+    float: left;
+    background:#bbb;
+    font: normal 18pt "Segoe UI";
+    color: #fff;
+    text-transform: uppercase;
+}
+.detail-description {
+    margin-left: 20px;
+    margin-top: 115px;
+    overflow:auto;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    overflow:hidden;
+}
+.offer-list {
+    padding: 0;
+    margin: 0;
+    margin-top: 40pt;
+}
+ul.offer-list li .product-list-details {
+    list-style: none;
+    background:url(../img/right_arrow_1x.png) no-repeat;
+    background-position: right;
+    font: normal 12pt "Segoe UI";
+    color: #333;
+   
+}
+ul.offer-list .product-heading,.list-header .product-heading, .product-detail-description , ul.news-list li .news-title{
+    font: bold 16pt "Segoe UI";
+    color: #37b0d7;
+}
+ul.offer-list .list-label,.list-header .list-label{
+    font: bold 12pt "Segoe UI";
+    color: #999;
+}
+.best-before {
+    background:url(../img/expiry_2x.png) no-repeat;
+    background-position: left 12px center;
+    background-size: 24px;
+	padding-left: 30px;
+    height: 24px;
+    background-color: #f6f6f6;
+    font: normal 12pt "Segoe UI";
+    color: #999;
+}
+.best-before span{ 
+    font: normal 12pt "Segoe UI";
+    color: #333;
+	padding-left: 10px;
+}
+
+ .list-details > div:nth-child(2n+1) {
+    float: left;
+    width:45%;
+ }
+ .product-list-details {
+     margin: 12px;
+ }
+ a {
+     text-decoration: none;
+ }
+ .product-item-details {
+    height: 114px;
+    background:url(../img/bg_beverages_2x.png) no-repeat center center fixed;
+        -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    margin-top: 40pt;
+ }
+ .product-item-details .list-header{
+     z-index:2;
+     position:relative;
+     top:45px;
+     background-color:rgba(251,251,251,0.85);
+ }
+ .list-header ,.product-detail-description div{
+     
+     font: normal 12pt "Segoe UI";
+    color: #333;
+ }
+  .list-header .product-heading,.list-header .list-label {
+      padding-left: 12px;
+  }
+  .product-label {
+      width: 150px;
+      display: block;
+      float: left;
+  }
+  .product-detail-description {
+      margin-top: 30px;
+  }
+  .product-detail-description .product-label{
+    font: normal 12pt "Segoe UI";
+    color: #999;
+    }
+    .product-desc {
+        padding: 12px;
+        overflow: auto;
+    }
+    .interested-btn {
+        position: fixed;
+		font: normal 14pt "Segoe UI";
+        bottom: 10px;
+        z-index: 10;
+    }
+
+
+    .deals-header-image {
+        background: url("../img/iplansys_logo_icon_2x.png") no-repeat;
+        background-position: right 20px center;
+		background-size: 45px;
+        background-color: #37b0d7;
+    }
+    .back-btn{
+        text-decoration: none;
+        font: normal 12pt "Segoe UI";
+        color: #fff;
+        float:left;
+        position: relative;
+        top: 12px;
+        left: 12px;
+    }
+	.back-btn-image{       
+        top: 18px;
+        position: fixed;
+        background-color: #37b0d7;
+    }
+    #call-dialog {
+        height: 62pt;
+        font: normal 12pt "Segoe UI";
+        color: #af0000;
+        background-color: #ffdc97;
+        text-align: center;
+        display: none;
+        margin-top: 10px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    #otperror {
+        height: 62pt;
+        font: normal 13pt "Segoe UI";
+        color: #af0000;
+        background-color: #ff9799;
+        text-align: center;
+        display: none;
+        margin-top: 10px;
+        border-radius: 4px;
+        width: 90%;
+        margin-left: 5%;
+    }
+    #error-dialog.call-dialog .icon {
+        background:url("../img/cross_2x.png") no-repeat;
+        background-position: center;
+        background-color: #af0000;
+        height: 62pt;
+        width: 40px;
+        float: left;
+    }
+    .call-dialog .icon {
+        background:url("../img/opt_error_2x.png") no-repeat;
+        background-position: center;
+        background-color: #EFB238;
+        height: 62pt;
+        width: 40px;
+        float: left;
+    }
+    .dialog-text {
+        padding: 7px;
+    }
+    #call-dialog.show, #error-dialog.show{
+        display: block;
+    }
+    .footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    .news-details-container {
+    background: url(../img/theme_food_2x.png) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 40pt;
+    left: 0;
+    }
+    ul.news-list {
+        position:relative;
+        top: 25%;
+        margin: 0;
+        padding: 10px;
+    }
+    ul.news-list li {
+    list-style: none;
+    font-size: 13pt;
+    border:1px solid #BFE4F1;
+    border-radius: 4px;
+    background-color: #F1EFED;
+    margin-bottom: 10px;
+    }
+    ul.news-list li .news-sub-title {
+        color: #000;
+        font: bold 13pt "Segoe UI";
+    }
+    ul.news-list li .news-heading{
+        background-color: #E9F7FC;
+        border-bottom:1px solid #BFE4F1;
+        padding: 5px;
+    }
+    ul.news-list li .news-description{
+        padding: 5px;
+    }	

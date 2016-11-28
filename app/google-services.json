@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "524834346411",
+    "firebase_url": "https://iplansysbasicapp.firebaseio.com",
+    "project_id": "iplansysbasicapp",
+    "storage_bucket": "iplansysbasicapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:524834346411:android:0a1c66a52f00f0f4",
+        "android_client_info": {
+          "package_name": "com.iplansys.webui"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "524834346411-mcpf0s682c2t8ilpl21h7va8h63m3cli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATD6VDWFBXatjyvbLRu9dnyrTttZZQmuU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
